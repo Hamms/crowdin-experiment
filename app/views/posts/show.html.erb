@@ -11,9 +11,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <p>
-        <%= @post.text %>
-      </p>
+      <%= markdown(@post.text) %>
     </div>
   </div>
 </div>
