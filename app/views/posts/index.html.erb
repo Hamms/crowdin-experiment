@@ -1,20 +1,30 @@
-<h1>Crowdin Webhooks Test</h1>
+<div class="container my-3">
+  <h2>All Posts</h2>
+  <hr />
+</div>
 
-<%= link_to 'New Post', new_post_path %>
-<h2>All Posts</h2>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th colspan="2"></th>
-  </tr>
 
+<div class="container">
   <% @posts.each do |post| %>
-    <tr>
-      <td><%= post.title %></td>
-      <td><%= post.text %></td>
-      <td><%= link_to 'Show', post_path(post) %></td>
-      <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    </tr>
+    <div class="row">
+      <div class="col">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><%= link_to post.title, post_path(post) %></h3>
+            <span class="text-secondary">
+              posted <%= post.created_at < 1.day.ago ?
+                "on #{post.created_at.to_date.to_formatted_s(:long)}" :
+                "#{time_ago_in_words(post.created_at)} ago" %>
+              <%= link_to '(edit)', edit_post_path(post) %>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p><%= post.text %></p>
+          </div>
+        </div>
+      </div>
+    </div>
   <% end %>
-</table>
+</div>
