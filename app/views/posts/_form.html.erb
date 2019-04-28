@@ -1,6 +1,5 @@
 <div class="container">
   <%= form_with model: @post, local: true do |form| %>
-
     <% if @post.errors.any? %>
       <div class="alert alert-danger" role="alert">
         <p>
@@ -32,7 +31,9 @@
     <div class="form-group row">
       <div class="col-sm-4">
         <%= form.submit class: "btn btn-primary" %>
-        <%= link_to "Cancel", posts_path, class: "btn btn-secondary" %>
+        <%= link_to "Cancel",
+          @post.persisted? ? post_path(@post) : posts_path,
+          class: "btn btn-secondary" %>
       </div>
     </div>
 

@@ -6,17 +6,19 @@
 
 <div class="container">
   <% @posts.each do |post| %>
-    <div class="row">
+    <div class="row mb-4">
       <div class="col">
-        <div class="row mb-4">
+        <div class="row">
           <div class="col">
-            <h3><%= link_to post.title, post_path(post) %></h3>
-            <span class="text-secondary">
-              posted <%= post.created_at < 1.day.ago ?
-                "on #{post.created_at.to_date.to_formatted_s(:long)}" :
-                "#{time_ago_in_words(post.created_at)} ago" %>
+            <h3 class="mb-0"><%= link_to post.title, post_path(post) %></h3>
+            <p class="text-secondary">
+              <span>
+                posted <%= post.created_at < 1.day.ago ?
+                  "on #{post.created_at.to_date.to_formatted_s(:long)}" :
+                  "#{time_ago_in_words(post.created_at)} ago" %>
+              </span>
               <%= link_to '(edit)', edit_post_path(post) %>
-            </span>
+            <p>
           </div>
         </div>
         <div class="row">
