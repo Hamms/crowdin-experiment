@@ -1,0 +1,16 @@
+{
+  "it": {
+    "secondary-text-post2": {
+      "title": "Secondary Text Post2",
+      "text": "Testing slug uniqueness!"
+    },
+    "secondary-text-post": {
+      "title": "Secondary Text Post",
+      "text": "This one should have a lot of text.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis cursus, luctus ligula sed, tristique arcu. Maecenas ut laoreet lectus. Ut sit amet ex non mi ultrices maximus sed vel mauris. Mauris vel velit porta magna congue accumsan sed eget arcu. Quisque eu sem faucibus, elementum orci et, hendrerit lectus. Sed ultricies et enim ac malesuada. Praesent vitae nunc nibh. Proin ut dictum est. Curabitur lacinia urna ac risus dignissim semper. Aliquam ut purus metus. Ut mollis, odio a laoreet semper, nulla urna porttitor arcu, vel aliquam ante libero vel sem. Quisque ornare magna ac mauris aliquam, sed condimentum nisi condimentum. Nullam pretium augue vitae commodo porttitor. Morbi vehicula tellus aliquam turpis pellentesque finibus. In scelerisque lacinia enim, a sagittis velit viverra ut. Nunc ullamcorper pulvinar velit aliquet condimentum.\r\n\r\nPraesent pretium iaculis justo sit amet porta. Integer rutrum, ligula a viverra tempus, risus erat mattis nibh, in tempor risus ex venenatis lectus. Cras tristique at mauris pellentesque vehicula. Fusce vehicula elit dolor, sit amet aliquam sapien viverra in. Quisque eget justo a ante eleifend dignissim sed nec purus. Maecenas elementum lacus vel purus aliquam, vitae efficitur dui pretium. Donec rhoncus nisl eget pellentesque venenatis.\r\n\r\nVestibulum consequat consequat neque, in luctus magna consectetur non. Maecenas non lectus risus. Morbi porta finibus leo sed posuere. Praesent tortor lacus, pretium quis fermentum a, iaculis vel enim. Proin nulla leo, scelerisque ac nisi vitae, euismod vestibulum tortor. Nunc imperdiet velit tincidunt, congue velit vel, faucibus eros. Nam varius, nulla sit amet accumsan pharetra, eros nisi sollicitudin nunc, eget euismod diam justo in arcu. Nulla elementum ex quam, quis euismod leo sollicitudin sit amet. Pellentesque nec sapien ligula. "
+    },
+    "test-post-please-ignore": {
+      "title": "Test Post Please Ignore",
+      "text": "Check it out, posts work! Translations should, too. And should auto update."
+    }
+  }
+}

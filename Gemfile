@@ -64,3 +64,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.3'
 gem 'jquery-rails', '~> 4.1'
 gem 'redcarpet', '~> 3.3'
+gem 'rest-client', '~> 2.0.1'
