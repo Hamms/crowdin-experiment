@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  root 'posts#index'
-  resources :posts
+  scope "(:locale)" do
+    resources :posts
+    root 'posts#index'
+  end
+
+  get '/:locale' => 'posts#index'
 end
