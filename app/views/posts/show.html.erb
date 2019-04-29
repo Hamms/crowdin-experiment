@@ -1,5 +1,5 @@
 <div class="container my-3">
-  <h2><%= @post.title %></h2>
+  <h2><%= @post.translated(:title) %></h2>
   <p class="text-secondary">
     <%= @post.created_at.to_date.to_formatted_s(:long) %>
     -
@@ -11,7 +11,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <%= markdown(@post.text) %>
+      <%= markdown(@post.translated(:text)) %>
     </div>
   </div>
 </div>

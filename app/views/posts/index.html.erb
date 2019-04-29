@@ -10,7 +10,7 @@
       <div class="col">
         <div class="row">
           <div class="col">
-            <h3 class="mb-0"><%= link_to post.title, post_path(post) %></h3>
+            <h3 class="mb-0"><%= link_to post.translated(:title), post_path(post) %></h3>
             <p class="text-secondary">
               <span>
                 posted <%= post.created_at < 1.day.ago ?
@@ -23,7 +23,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <%= markdown(post.text) %>
+            <%= markdown(post.translated(:text)) %>
           </div>
         </div>
       </div>
