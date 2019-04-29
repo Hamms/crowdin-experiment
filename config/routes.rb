@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   scope "(:locale)" do
-    resources :posts
+    resources :posts, param: :slug
     root 'posts#index'
   end
 
